@@ -4,6 +4,7 @@
           linear-gradient(-45deg, rgba(120, 155, 255, 0.9) 25%, rgba(255, 160, 65, 0.9) 75%);
   .container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
 

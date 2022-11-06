@@ -13,9 +13,7 @@ export class AppComponent implements OnInit{
 
 setRates(rates:any) {
     this.rates = rates
-  console.log(this.rates)
 }
-
  ngOnInit() {
    fetch("https://cdn.cur.su/api/latest.json")
        .then(res => res.json())

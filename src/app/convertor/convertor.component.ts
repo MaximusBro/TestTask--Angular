@@ -24,7 +24,6 @@ export class ConvertorComponent{
   onChangeFromPrice(value:any)  {
     const price = value / this.rates[this.fromCurrency];
     const result = price * this.rates[this.toCurrency]
-    console.log("working")
    this.setToPrice(+result.toFixed(2));
     this.setFromPrice(+value);
   }
