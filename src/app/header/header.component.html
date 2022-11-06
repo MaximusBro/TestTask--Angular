@@ -1,0 +1,14 @@
+<header class="header">
+    <div class="container">
+        <div class="header__logo">
+          <h1>Convertor</h1>
+        </div>
+        <div class="header__currency">
+            <ul>
+              <li *ngFor="let s of curr">
+                  {{s}} {{rates[s]}}
+              </li>
+            </ul>
+        </div>
+    </div>
+</header>

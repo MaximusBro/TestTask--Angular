@@ -1,0 +1,22 @@
+<section class="convertor">
+    <div class="container">
+        <div class="convertor__title">
+            <h2>CURRENCY CONVERTER</h2>
+            <small>{{nowDate | date}}</small>
+        </div>
+        <div class="convertor__conv">
+            <div class="convertor__from">
+                <input  (input)="onChangeFromPrice($any($event.target).value)" type="number" value="{{fromPrice}}">
+                <select  [(ngModel)]="fromCurrency" (change)="onChangeFromCurrecy()">
+                    <option [value]="curr" *ngFor="let curr of curr" >{{curr}}</option>
+                </select>
+            </div>
+            <div class="convertor__to">
+                <input (input) ="onChangeToPrice($any($event.target).value)" type="number" value="{{toPrice}}" >
+                <select   [(ngModel)]="toCurrency" (change)="onChangetoCurrecy()" >
+                    <option *ngFor="let curr of curr">{{curr}}</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</section>
